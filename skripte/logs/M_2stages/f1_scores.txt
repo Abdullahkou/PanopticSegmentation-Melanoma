@@ -1,0 +1,7 @@
+F1 Scores for each class:
+Background: 0.9996
+nuclei_tumor: 0.9274
+nuclei_lymphocyte: 0.7598
+Other cells: 0.5617
+
+Mean F1 Score: 0.7496

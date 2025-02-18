@@ -1,0 +1,21 @@
+N_epochs: 50
+alpha: 0.75
+batch_size: 16
+color_augment: Default
+encoder: densenet121
+extra_channels: gray channel added
+fine_tuning: ''
+learning_rate: 0.0001
+lossf: combined_loss (dice+CE[0.5, 1.0, 5.0, 5.0])
+magnitude: 3
+model_architecture: unet++ encoder tiefe = 3
+momentum: 0.9
+num data: 'with new data split. sampler: 80% (mit aug data with class 2, 3 only)'
+num_workers: 4
+optimizer: adam
+plot_cm_step: 5
+save_model_step: 25
+scheduler: cosine
+seed: 15
+unfreeze_from_epoch: 6
+weight_decay: 0.0005

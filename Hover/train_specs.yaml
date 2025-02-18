@@ -1,0 +1,23 @@
+# Training specs
+'model_architecture':  "unet++ encoder mit Attention tiefe = 3"
+'encoder': 'densenet121'
+'optimizer': 'Adam'
+'batch_size': 16
+'N_epochs': 100
+'learning_rate':  0.0001
+'weight_decay': 0.005
+'scheduler' : 'cosine'
+'color_augment': 'Default'
+'fine_tuning': ''
+'seed': 15
+'magnitude': 3
+'alpha' : 0.75
+'momentum' : 0.9
+'unfreeze_from_epoch': 6
+'save_model_step': 25
+'num_workers': 4
+'plot_cm_step': 5
+'lossf': "focal_loss [0.1, 1.0, 2.0, 3.0]"
+'extra_channels': "HoVer-maps added + gray channel in=6 channels"
+'num data': "with new data split. ALL AUG"
+'free text': "first run"

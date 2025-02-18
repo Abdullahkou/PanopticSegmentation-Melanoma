@@ -1,0 +1,8 @@
+{
+    "tissue_white_background":	0,
+    "tissue_stroma":	1,
+    "tissue_blood_vessel":	2,
+    "tissue_tumor":	3,
+    "tissue_epidermis":	4,
+    "tissue_necrosis":	5
+}

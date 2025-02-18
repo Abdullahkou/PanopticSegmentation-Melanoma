@@ -1,0 +1,22 @@
+N_epochs: 75
+alpha: 0.75
+batch_size: 16
+color_augment: Default
+encoder: densenet121
+extra_channels: "gray channel added nur f\xFCr das erste netz, end-to-end Multi-Stage-Setup"
+fine_tuning: ''
+free text: " loss f\xFCr jedes netz alleine und optimzizer auch alleine"
+learning_rate: 0.0001
+lossf: focal_loss [0.1, 1.0, 2.0, 3.0]
+magnitude: 3
+model_architecture: 2 unet++ encoder mit Attention tiefe = 3
+momentum: 0.9
+num data: with new data split. ALL (mit aug data with class 2, 3 only)
+num_workers: 4
+optimizer: Adam
+plot_cm_step: 5
+save_model_step: 25
+scheduler: cosine
+seed: 15
+unfreeze_from_epoch: 6
+weight_decay: 0.005

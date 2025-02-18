@@ -1,0 +1,24 @@
+# Training specs
+
+'model_architecture': ' MTL unet++ encoder tiefe = 4'
+'encoder': 'densenet121'
+'optimizer': 'Adam'
+'batch_size': 16
+'N_epochs': 75
+'learning_rate':  0.0001
+'weight_decay': 0.005
+'scheduler' : 'cosine'
+'color_augment': 'Default'
+'fine_tuning': ''
+'seed': 15
+'magnitude': 3
+'alpha' : 0.75
+'momentum' : 0.9
+'unfreeze_from_epoch': 6
+'save_model_step': 25
+'num_workers': 4
+'plot_cm_step': 5
+'lossf': "focal_loss nuc (0.3, 1.0, 2.0, 5.0] and tissue [0.01, 2.0, 5.0, 1.0]"
+'extra_channels': "gray channel added"
+'num data': "without augmented data, tissue ist 4 klassen zusammengefasst"
+"free text": "Attention eingebaut und encoder ist tiefer (4)"

@@ -1,0 +1,6 @@
+{
+    "Background": 0,
+    "nuclei_tumor":	1,
+    "nuclei_lymphocyte": 2,
+    "Other cells":	3
+}
