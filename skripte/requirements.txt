@@ -9,8 +9,5 @@ scikit-image==0.20.0
 shapely==2.0.1
 tqdm==4.65.0
 segmentation-models-pytorch==0.3.2
-# tribun_patchio==0.0.2
-# tribvn_ai==0.0.2
 tensorboard==2.13.0
 albumentations==1.3.0
-# torch==2.0.0+cu117
