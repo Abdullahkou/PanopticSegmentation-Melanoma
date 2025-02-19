@@ -44,10 +44,8 @@ class MultiTaskFocalDiceLoss(nn.Module):
         self.gamma = gamma
         self.dice_weight = dice_weight  # Gewichtung zwischen Dice und Focal Loss
 
-        # Focal Loss für die Zellkernerkennung
         self.focal_loss_nuclei = FocalLoss(alpha=alpha_nuclei, gamma=gamma)
         
-        # Cross-Entropy Loss und Dice Loss für Gewebesegmentierung
         self.ce_loss_tissue = nn.CrossEntropyLoss(weight=alpha_tissue)
         self.dice_loss_tissue = DiceLoss()  # Verwende DiceLoss ohne alpha_tissue
 
